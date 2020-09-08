@@ -72,6 +72,14 @@ for line in file_inp:
 file_inp.close()
 file_out.close()
 
+# Результат
+"""
+Один — 1
+Два — 2
+Три — 3
+Четыре — 4
+"""
+
 
 
 
