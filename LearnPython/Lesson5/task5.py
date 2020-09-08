@@ -10,13 +10,15 @@
 
 """
 
+#Считываем файл
 dic_file = open ("task5.txt","r")
 dic = {}
 for i in dic_file:
     arr = i.replace(": ", " ").split()
     ssum = 0
-    for i in range(len(arr)- 1): ssum = ssum + int(arr[i+1].replace(" ", "").replace("("," ").replace("—", "0").split()[0] )
+    for i in range(len(arr)- 1): ssum = ssum + int(arr[i+1].replace(" ", "").replace("("," ").replace("—", "0").split()[0] ) #Убераем всё лишнее
     dic.update( {arr[0]: ssum})
 
 dic_file.close()
+#Выводим результат
 print(dic)
