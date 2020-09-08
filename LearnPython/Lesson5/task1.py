@@ -10,6 +10,6 @@ out_f = open("out_put.txt", "w")
 inp = " "
 while (len(inp)>0):
     inp = input("Введите текст для записи в файл или пустую строку для завершени:")
-    out_f.write(inp)
+    out_f.write(inp + "\n")
 out_f.close()
 
