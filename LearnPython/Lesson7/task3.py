@@ -68,6 +68,8 @@ Cl = Cell(10)
 Cl2 = Cell(5)
 
 Cl3 = Cl + Cl2
-print(Cl + Cl2)
+print(f"Сумма {Cl + Cl2}")
+print(f"Вычитание {Cl - Cl2}")
+print(f"Произведение {Cl * Cl2}")
 
-print(Cl3.make_order(5))
+print(f"make_order {Cl3.make_order(5)}")
